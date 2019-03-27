@@ -7,7 +7,7 @@ start()
 
 {
 
-    (sh /root/GWOC.sh &)
+	(sh /root/GWOC.sh &)
 	logger -t GWOC "wan wifi oc start"
 
 }
