@@ -17,7 +17,6 @@ GWOC.sh
 SSH登陆运行以下命令可恢复状态
 定时关启WAN
 uci set network.wan.disabled=1
-
 uci commit network
 /etc/init.d/network restart
 
