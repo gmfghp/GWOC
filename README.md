@@ -71,8 +71,11 @@ echo "judge=0" >> /root/0judge.log
 judge=0，1，2，3
 
 0：wan，wifi操作全部取消
+
 1：wan，wifi操作全部进行
+
 2：wan进行，wifi取消
+
 3：wan取消，wifi进行
 
 或者 按reset按钮（暂只含有状态1,2）
