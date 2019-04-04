@@ -52,3 +52,27 @@ uci set wireless.@wifi-iface[2].disabled=0
 uci commit wireless
 
 wifi
+
+2019-04-03添加常单控
+································································································
+
+SSH下执行命令
+
+读取状态命令
+
+echo "$(grep 'judge=' /root/0judge.log | tail -n 1)"
+
+修改状态命令（分为四种状态）
+
+echo "judge=0" >> /root/0judge.log
+
+其中四钟状态可选
+
+judge=0，1，2，3
+
+0：wan，wifi操作全部取消
+1：wan，wifi操作全部进行
+2：wan进行，wifi取消
+3：wan取消，wifi进行
+
+或者 按reset按钮（暂只含有状态1,2）
